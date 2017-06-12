@@ -1,0 +1,37 @@
+{
+  "name": "gatlingjs",
+  "version": "0.0.1",
+  "description": "A NodeJS wrapper for gatling - load testing tool",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "transpile": "./node_modules/gulp/bin/gulp.js",
+    "build": "npm run clean && npm run transpile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gatlingjs": "./dist/index.js"
+  },
+  "keywords": [
+    "gatling",
+    "gatlingjs",
+    "load",
+    "load test",
+    "test",
+    "performance",
+    "node"
+  ],
+  "author": "Abhilash Chelankara",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-sourcemaps": "^2.6.0"
+  }
+}
