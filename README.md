@@ -27,5 +27,11 @@ At present, gatlingjs needs the following folders in your project root
 * http://gatling.io/docs/current/quickstart/
 * http://gatling.io/docs/current/advanced_tutorial/#advanced-tutorial
 
-Note: You do not need to explicitly download the binaries from gatling.io if you install this npm package since it has gatling embedded in it.
+Note: 
+* You do not need to explicitly download the binaries from gatling.io if you install this npm package since it has gatling embedded in it.
+* At the moment, this works only on nix platform. Please feel free to contribute to support it on windows too.
 
+## TODOs
+* Unit tests
+* Support command line arguments available in gatling
+* Compatibility with Windows Platform
