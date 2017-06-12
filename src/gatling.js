@@ -35,10 +35,10 @@ class Gatling {
       `${this.userDirAbsolutePath}/user-files/simulations`
     ];
 
-    console.log('Setting path for data at', path[0]);
-    console.log('Setting path for results at', path[1]);
-    console.log('Setting path for bodies at', path[2]);
-    console.log('Setting path for simulations at', path[3]);
+    console.log('Setting data path to', path[0]);
+    console.log('Setting results path to', path[1]);
+    console.log('Setting bodies path to', path[2]);
+    console.log('Setting simulations path to', path[3]);
 
     return [
       '-df', path[0],

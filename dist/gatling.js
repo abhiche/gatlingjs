@@ -47,7 +47,14 @@ var Gatling = function () {
   }, {
     key: 'args',
     get: function get() {
-      return ['-df', this.userDirAbsolutePath + '/user-files/data', '-rf', this.userDirAbsolutePath + '/results', '-bdf', this.userDirAbsolutePath + '/user-files/bodies', '-sf', this.userDirAbsolutePath + '/user-files/simulations'];
+      var path = [this.userDirAbsolutePath + '/user-files/data', this.userDirAbsolutePath + '/results', this.userDirAbsolutePath + '/user-files/bodies', this.userDirAbsolutePath + '/user-files/simulations'];
+
+      console.log('Setting data path to', path[0]);
+      console.log('Setting results path to', path[1]);
+      console.log('Setting bodies path to', path[2]);
+      console.log('Setting simulations path to', path[3]);
+
+      return ['-df', path[0], '-rf', path[1], '-bdf', path[2], '-sf', path[3]];
     }
   }, {
     key: 'cwd',
