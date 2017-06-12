@@ -28,11 +28,23 @@ class Gatling {
   }
 
   get args() {
+    const path = [
+      `${this.userDirAbsolutePath}/user-files/data`,
+      `${this.userDirAbsolutePath}/results`,
+      `${this.userDirAbsolutePath}/user-files/bodies`,
+      `${this.userDirAbsolutePath}/user-files/simulations`
+    ];
+
+    console.log('Setting path for data at', path[0]);
+    console.log('Setting path for results at', path[1]);
+    console.log('Setting path for bodies at', path[2]);
+    console.log('Setting path for simulations at', path[3]);
+
     return [
-      '-df', `${this.userDirAbsolutePath}/user-files/data`,
-      '-rf', `${this.userDirAbsolutePath}/results`,
-      '-bdf', `${this.userDirAbsolutePath}/user-files/bodies`,
-      '-sf', `${this.userDirAbsolutePath}/user-files/simulations`
+      '-df', path[0],
+      '-rf', path[1],
+      '-bdf', path[2],
+      '-sf', path[3]
     ];
   }
 

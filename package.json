@@ -4,6 +4,7 @@
   "description": "A NodeJS wrapper for gatling - load testing tool",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=development ./node_modules/babel-cli/bin/babel-node.js src/index.js",
     "clean": "rm -rf dist",
     "transpile": "./node_modules/gulp/bin/gulp.js",
     "build": "npm run clean && npm run transpile",
