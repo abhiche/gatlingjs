@@ -9,7 +9,7 @@ Warning
 Gatling launch scripts and Gatling maven plugin honor JAVA_HOME env var if it’s set. OS, like OSX, have their own tricky way of discovering which version of Java to run, so you might end up running a different version than the one java -version tells you. If you get strange errors such as Unsupported major.minor version 51.0 and you were expecting to run a JDK8, you might want to explicitly set JAVA_HOME.
 
 ## How should i install this library?
-This is meant to be installed as a dev dependency in your project folder
+This is meant to be installed as a dev dependency in your project folder    
 ``` npm i gatlingjs -D ```
 
 ## How do I configure my project to add simulation files
@@ -21,7 +21,8 @@ At present, gatlingjs needs the following folders in your project root
 * test/performance/user-files/bodies => request body related stuff
 
 ## How do i run it?
-``` ./node_modules/gatlingjs/dist/index.js ```
+``` ./node_modules/gatlingjs/dist/index.js ```     
+Behind the scenes, gatlingjs will scan test/performance/user-files/simulations for the simulation files and prompt you to choose the simulation you wanna run.
 
 ## By the way, is there any documentation for gatling?
 * http://gatling.io/docs/current/quickstart/
