@@ -21,6 +21,9 @@ At present, gatlingjs needs the following folders in your project root
 ``` ./node_modules/gatlingjs/dist/index.js ```     
 Behind the scenes, gatlingjs will scan test/performance/user-files/simulations for the simulation files and prompt you to choose the simulation you wanna run.
 
+## Is there a sample project?
+You can find it at https://github.com/abhiche/gatlingjs-example
+
 ## By the way, is there any documentation for gatling?
 * http://gatling.io/docs/current/quickstart/
 * http://gatling.io/docs/current/advanced_tutorial/#advanced-tutorial
