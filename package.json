@@ -1,6 +1,6 @@
 {
   "name": "gatlingjs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A NodeJS wrapper for gatling - load testing tool",
   "main": "index.js",
   "scripts": {
